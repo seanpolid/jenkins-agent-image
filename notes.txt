@@ -1,0 +1,7 @@
+Starting up container:
+
+docker container run -i --name <name> --network="host" jenkins-agent (personal image)
+
+Starting agent jar:
+
+java -jar agent.jar -jnlpUrl http://localhost:8080/computer/agent1/jenkins-agent.jnlp -secret <secret> -workDir "home/ubuntu/jenkins"
